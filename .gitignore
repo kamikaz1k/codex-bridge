@@ -1,0 +1,37 @@
+node_modules/
+dist/
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+.npmrc
+.netrc
+.pypirc
+.aws/
+.ssh/
+.codex/
+auth.json
+credentials.json
+credentials.*.json
+secrets/
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+
+# Runtime logs and local session data
+*.log
+logs/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
