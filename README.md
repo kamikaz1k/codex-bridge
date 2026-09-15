@@ -4,6 +4,14 @@
 
 A local web interface for the Codex desktop app's `app-server`, with a React chat UI, a component playground, and macOS service scripts. This project is retained as a reference; it is not maintained as a supported integration.
 
+## Mobile UI
+
+Captured in the in-app Browser at 390 × 844 using synthetic sample data.
+
+| New thread · empty composer | Conversation · multiline draft | Mobile thread navigation |
+| --- | --- | --- |
+| ![Mobile new-thread screen with empty composer](output/playwright/mobile-new-thread.jpg) | ![Mobile conversation with an expanded multiline composer](output/playwright/mobile-draft.jpg) | ![Mobile drawer for searching and switching threads](output/playwright/mobile-threads.jpg) |
+
 ## Security
 
 The bridge has no authentication or WebSocket Origin validation. Connected clients can access conversations and send agent requests, including approval responses. The RPC method filter is not an authentication mechanism. Run only in an environment where everyone who can reach the service is trusted.
